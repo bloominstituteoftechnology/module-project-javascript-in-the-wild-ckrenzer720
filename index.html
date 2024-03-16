@@ -106,13 +106,13 @@
     // 🧠 We suggest using a for loop. Research how to loop backwards over an array, starting at the last element.
     // 🧠 Use a ternary in the return statement.
     const reverseString = (str) => {
-      const result = []
+      let result = ''
       for (let i = str.length - 1; i >= 0; i--) {
-        result.push(str[i])
+        result = result + str[i]
         // console.log(result);
       }
-      const newStr = result.join('')
-      return (str !== newStr) ? str.split('').reverse().join('') : "It's a palindrome!"
+      // const newStr = result.join('')
+      return (str !== result) ? str.split('').reverse().join('') : "It's a palindrome!"
     }
 
     // 👉 CHALLENGE 7
